@@ -23,7 +23,7 @@ for i in range(width):
         # print(i, j)
         px_color = img.getpixel((i, j))
         print(px_color)
-        null = obj.createNode('null',f'null_{i}_{j}')
+        null = obj.createNode('null',f'_{i}_{j}')
         null.setPosition([i*0.75, -j/2])
         null.setColor(hou.Color(px_color[0]/255, px_color[1]/255, px_color[2]/255))
 
